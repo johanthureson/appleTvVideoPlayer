@@ -27,10 +27,16 @@ struct DailyMotionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
                     ForEach(videos, id: \.id) { video in
-                        VStack {
-                            RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
-                            Text(video.title)
+                        NavigationLink(destination: Text("hej")) {
+                            VStack {
+                                RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
+                                    .frame(maxWidth: 460)
+                                    .cornerRadius(10)
+                                    .padding()
+                                Text(video.title)
+                            }
                         }
+                        .buttonStyle(PlainNavigationLinkButtonStyle())
                     }
                 }
             }
@@ -96,4 +102,23 @@ struct RemoteImage: View {
             }
         }.resume()
     }
+}
+
+struct PlainNavigationLinkButtonStyle: ButtonStyle {
+  func makeBody(configuration: Self.Configuration) -> some View {
+    PlainNavigationLinkButton(configuration: configuration)
+  }
+}
+
+struct PlainNavigationLinkButton: View {
+  
+  @Environment(\.isFocused) var focused: Bool
+
+  let configuration: ButtonStyle.Configuration
+
+  var body: some View {
+    configuration.label
+      .scaleEffect(focused ? 1.1 : 1)
+      .focusable(true)
+  }
 }
