@@ -18,31 +18,54 @@ struct VideoList: Decodable {
     let list: [Video]
 }
 
-struct DailyMotionView: View {
-    @State private var videos: [Video] = []
+struct CategoryRow: View {
+    
+    var videos: [Video]
 
     var body: some View {
+        
         VStack {
-            Text("News")
+            
+            HStack {
+                Text("News")
+                Spacer()
+            }
+            .padding(.horizontal)
+            
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack {
+                HStack {
                     ForEach(videos, id: \.id) { video in
                         NavigationLink(destination: Text("hej")) {
                             VStack {
                                 RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
                                     .frame(maxWidth: 460)
                                     .cornerRadius(10)
-                                    .padding()
                                 Text(video.title)
-                                    .lineLimit(3)
+                                    .lineLimit(2)
                                     .frame(maxWidth: 428)
+                                Spacer()
                             }
                         }
                         .buttonStyle(PlainNavigationLinkButtonStyle())
                     }
                 }
             }
-        }.onAppear(perform: fetchVideos)
+        }
+    }
+}
+
+struct DailyMotionView: View {
+    @State private var videos: [Video] = []
+
+    var body: some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                CategoryRow(videos: videos)
+                CategoryRow(videos: videos)
+                CategoryRow(videos: videos)
+                CategoryRow(videos: videos)
+            }.onAppear(perform: fetchVideos)
+        }
     }
 
     func fetchVideos() {
