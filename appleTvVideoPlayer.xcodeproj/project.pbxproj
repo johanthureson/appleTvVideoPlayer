@@ -14,6 +14,7 @@
 		4DE11CA52BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CA42BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift */; };
 		4DE11CAF2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CAE2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift */; };
 		4DE11CB12BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CB02BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift */; };
+		4DE11CBE2BBE8385006F7DC6 /* DailyMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CBD2BBE8385006F7DC6 /* DailyMotionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4DE11CAA2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleTvVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE11CAE2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerUITests.swift; sourceTree = "<group>"; };
 		4DE11CB02BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DE11CBD2BBE8385006F7DC6 /* DailyMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4DE11C932BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift */,
 				4DE11C952BBE82DD006F7DC6 /* ContentView.swift */,
+				4DE11CBD2BBE8385006F7DC6 /* DailyMotionView.swift */,
 				4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */,
 				4DE11C992BBE82DF006F7DC6 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				4DE11C962BBE82DD006F7DC6 /* ContentView.swift in Sources */,
 				4DE11C942BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift in Sources */,
+				4DE11CBE2BBE8385006F7DC6 /* DailyMotionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
