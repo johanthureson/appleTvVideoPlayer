@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import AVKit
 
 struct Video: Identifiable, Decodable {
     let id: String
@@ -35,7 +36,7 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(videos, id: \.id) { video in
-                        NavigationLink(destination: Text("hej")) {
+                        NavigationLink(destination: VideoPlayer(player: AVPlayer(url: URL(string: "https://www.dailymotion.com/video/\(video.id)")!))) {
                             VStack {
                                 RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
                                     .frame(maxWidth: 460)
