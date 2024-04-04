@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DE11C942BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11C932BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift */; };
+		4DE11C962BBE82DD006F7DC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11C952BBE82DD006F7DC6 /* ContentView.swift */; };
+		4DE11C982BBE82DF006F7DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */; };
+		4DE11C9B2BBE82DF006F7DC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE11C9A2BBE82DF006F7DC6 /* Preview Assets.xcassets */; };
+		4DE11CA52BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CA42BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift */; };
+		4DE11CAF2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CAE2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift */; };
+		4DE11CB12BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11CB02BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE11CA12BBE82DF006F7DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE11C882BBE82DD006F7DC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE11C8F2BBE82DD006F7DC6;
+			remoteInfo = appleTvVideoPlayer;
+		};
+		4DE11CAB2BBE82DF006F7DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE11C882BBE82DD006F7DC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE11C8F2BBE82DD006F7DC6;
+			remoteInfo = appleTvVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DE11C902BBE82DD006F7DC6 /* appleTvVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleTvVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE11C932BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerApp.swift; sourceTree = "<group>"; };
+		4DE11C952BBE82DD006F7DC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DE11C9A2BBE82DF006F7DC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DE11CA02BBE82DF006F7DC6 /* appleTvVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleTvVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE11CA42BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerTests.swift; sourceTree = "<group>"; };
+		4DE11CAA2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleTvVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE11CAE2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerUITests.swift; sourceTree = "<group>"; };
+		4DE11CB02BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleTvVideoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE11C8D2BBE82DD006F7DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11C9D2BBE82DF006F7DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11CA72BBE82DF006F7DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE11C872BBE82DD006F7DC6 = {
+			isa = PBXGroup;
+			children = (
+				4DE11C922BBE82DD006F7DC6 /* appleTvVideoPlayer */,
+				4DE11CA32BBE82DF006F7DC6 /* appleTvVideoPlayerTests */,
+				4DE11CAD2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests */,
+				4DE11C912BBE82DD006F7DC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE11C912BBE82DD006F7DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE11C902BBE82DD006F7DC6 /* appleTvVideoPlayer.app */,
+				4DE11CA02BBE82DF006F7DC6 /* appleTvVideoPlayerTests.xctest */,
+				4DE11CAA2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE11C922BBE82DD006F7DC6 /* appleTvVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DE11C932BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift */,
+				4DE11C952BBE82DD006F7DC6 /* ContentView.swift */,
+				4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */,
+				4DE11C992BBE82DF006F7DC6 /* Preview Content */,
+			);
+			path = appleTvVideoPlayer;
+			sourceTree = "<group>";
+		};
+		4DE11C992BBE82DF006F7DC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DE11C9A2BBE82DF006F7DC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DE11CA32BBE82DF006F7DC6 /* appleTvVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE11CA42BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift */,
+			);
+			path = appleTvVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		4DE11CAD2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE11CAE2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift */,
+				4DE11CB02BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift */,
+			);
+			path = appleTvVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DE11C8F2BBE82DD006F7DC6 /* appleTvVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE11CB42BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayer" */;
+			buildPhases = (
+				4DE11C8C2BBE82DD006F7DC6 /* Sources */,
+				4DE11C8D2BBE82DD006F7DC6 /* Frameworks */,
+				4DE11C8E2BBE82DD006F7DC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appleTvVideoPlayer;
+			productName = appleTvVideoPlayer;
+			productReference = 4DE11C902BBE82DD006F7DC6 /* appleTvVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DE11C9F2BBE82DF006F7DC6 /* appleTvVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE11CB72BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayerTests" */;
+			buildPhases = (
+				4DE11C9C2BBE82DF006F7DC6 /* Sources */,
+				4DE11C9D2BBE82DF006F7DC6 /* Frameworks */,
+				4DE11C9E2BBE82DF006F7DC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE11CA22BBE82DF006F7DC6 /* PBXTargetDependency */,
+			);
+			name = appleTvVideoPlayerTests;
+			productName = appleTvVideoPlayerTests;
+			productReference = 4DE11CA02BBE82DF006F7DC6 /* appleTvVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DE11CA92BBE82DF006F7DC6 /* appleTvVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE11CBA2BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayerUITests" */;
+			buildPhases = (
+				4DE11CA62BBE82DF006F7DC6 /* Sources */,
+				4DE11CA72BBE82DF006F7DC6 /* Frameworks */,
+				4DE11CA82BBE82DF006F7DC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE11CAC2BBE82DF006F7DC6 /* PBXTargetDependency */,
+			);
+			name = appleTvVideoPlayerUITests;
+			productName = appleTvVideoPlayerUITests;
+			productReference = 4DE11CAA2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE11C882BBE82DD006F7DC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4DE11C8F2BBE82DD006F7DC6 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					4DE11C9F2BBE82DF006F7DC6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4DE11C8F2BBE82DD006F7DC6;
+					};
+					4DE11CA92BBE82DF006F7DC6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4DE11C8F2BBE82DD006F7DC6;
+					};
+				};
+			};
+			buildConfigurationList = 4DE11C8B2BBE82DD006F7DC6 /* Build configuration list for PBXProject "appleTvVideoPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DE11C872BBE82DD006F7DC6;
+			productRefGroup = 4DE11C912BBE82DD006F7DC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE11C8F2BBE82DD006F7DC6 /* appleTvVideoPlayer */,
+				4DE11C9F2BBE82DF006F7DC6 /* appleTvVideoPlayerTests */,
+				4DE11CA92BBE82DF006F7DC6 /* appleTvVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE11C8E2BBE82DD006F7DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE11C9B2BBE82DF006F7DC6 /* Preview Assets.xcassets in Resources */,
+				4DE11C982BBE82DF006F7DC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11C9E2BBE82DF006F7DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11CA82BBE82DF006F7DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE11C8C2BBE82DD006F7DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE11C962BBE82DD006F7DC6 /* ContentView.swift in Sources */,
+				4DE11C942BBE82DD006F7DC6 /* appleTvVideoPlayerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11C9C2BBE82DF006F7DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE11CA52BBE82DF006F7DC6 /* appleTvVideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE11CA62BBE82DF006F7DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE11CB12BBE82DF006F7DC6 /* appleTvVideoPlayerUITestsLaunchTests.swift in Sources */,
+				4DE11CAF2BBE82DF006F7DC6 /* appleTvVideoPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE11CA22BBE82DF006F7DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE11C8F2BBE82DD006F7DC6 /* appleTvVideoPlayer */;
+			targetProxy = 4DE11CA12BBE82DF006F7DC6 /* PBXContainerItemProxy */;
+		};
+		4DE11CAC2BBE82DF006F7DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE11C8F2BBE82DD006F7DC6 /* appleTvVideoPlayer */;
+			targetProxy = 4DE11CAB2BBE82DF006F7DC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DE11CB22BBE82DF006F7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.4;
+			};
+			name = Debug;
+		};
+		4DE11CB32BBE82DF006F7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DE11CB52BBE82DF006F7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"appleTvVideoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		4DE11CB62BBE82DF006F7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"appleTvVideoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		4DE11CB82BBE82DF006F7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appleTvVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/appleTvVideoPlayer";
+				TVOS_DEPLOYMENT_TARGET = 17.4;
+			};
+			name = Debug;
+		};
+		4DE11CB92BBE82DF006F7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appleTvVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/appleTvVideoPlayer";
+				TVOS_DEPLOYMENT_TARGET = 17.4;
+			};
+			name = Release;
+		};
+		4DE11CBB2BBE82DF006F7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = appleTvVideoPlayer;
+			};
+			name = Debug;
+		};
+		4DE11CBC2BBE82DF006F7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8NX76ELDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nu.sing2.appleTvVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = appleTvVideoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE11C8B2BBE82DD006F7DC6 /* Build configuration list for PBXProject "appleTvVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE11CB22BBE82DF006F7DC6 /* Debug */,
+				4DE11CB32BBE82DF006F7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE11CB42BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE11CB52BBE82DF006F7DC6 /* Debug */,
+				4DE11CB62BBE82DF006F7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE11CB72BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE11CB82BBE82DF006F7DC6 /* Debug */,
+				4DE11CB92BBE82DF006F7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE11CBA2BBE82DF006F7DC6 /* Build configuration list for PBXNativeTarget "appleTvVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE11CBB2BBE82DF006F7DC6 /* Debug */,
+				4DE11CBC2BBE82DF006F7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DE11C882BBE82DD006F7DC6 /* Project object */;
+}
