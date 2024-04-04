@@ -160,12 +160,16 @@ struct PlainNavigationLinkButtonStyle: ButtonStyle {
 struct PlainNavigationLinkButton: View {
   
   @Environment(\.isFocused) var focused: Bool
+    @State private var isWobbling: Bool = false
 
   let configuration: ButtonStyle.Configuration
 
   var body: some View {
     configuration.label
-      .scaleEffect(focused ? 1.1 : 1)
-      .focusable(true)
+          .aspectRatio(contentMode: .fit)
+          .scaleEffect(focused ? 1 : 0.9)
+          .animation(.easeInOut(duration: 0.15), value: focused)
+          .focusable(true)
   }
+    
 }
