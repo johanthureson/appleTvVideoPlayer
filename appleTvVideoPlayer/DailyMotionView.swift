@@ -34,6 +34,8 @@ struct DailyMotionView: View {
                                     .cornerRadius(10)
                                     .padding()
                                 Text(video.title)
+                                    .lineLimit(3)
+                                    .frame(maxWidth: 428)
                             }
                         }
                         .buttonStyle(PlainNavigationLinkButtonStyle())
