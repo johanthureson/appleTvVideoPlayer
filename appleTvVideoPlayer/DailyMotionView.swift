@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Combine
+import AVKit
 
 struct Video: Identifiable, Decodable {
     let id: String
@@ -18,6 +18,28 @@ struct VideoList: Decodable {
     let list: [Video]
 }
 
+struct VideoPlayerView: View {
+    
+    var videos: [Video]
+    @State var player: AVPlayer?
+    
+    var body: some View {
+        VStack {
+            VideoPlayer(player: player)
+                .onAppear {
+                    setPlayer()
+                }
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    private func setPlayer() {
+        player = AVPlayer(playerItem: AVPlayerItem(url: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!))
+        player?.play()
+    }
+    
+}
+    
 struct CategoryRow: View {
     
     var videos: [Video]
@@ -35,7 +57,7 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(videos, id: \.id) { video in
-                        NavigationLink(destination: Text("hej")) {
+                        NavigationLink(destination: VideoPlayerView(videos: videos)) {
                             VStack {
                                 RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
                                     .frame(maxWidth: 460)
