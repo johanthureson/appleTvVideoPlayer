@@ -69,7 +69,7 @@ struct DailyMotionView: View {
     }
 
     func fetchVideos() {
-        guard let url = URL(string: "https://api.dailymotion.com/videos?fields=id,title,language&channel=news&limit=10&family_filter=true") else { return }
+        guard let url = URL(string: "https://api.dailymotion.com/videos?fields=id,title,language&channel=news&limit=10&family_filter=true&localization=en") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data {
                 if let decodedResponse = try? JSONDecoder().decode(VideoList.self, from: data) {
