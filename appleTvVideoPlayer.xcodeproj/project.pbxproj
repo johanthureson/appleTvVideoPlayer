@@ -218,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 4DE11C872BBE82DD006F7DC6;
+			packageReferences = (
+				4DE11CBF2BBE95D0006F7DC6 /* XCRemoteSwiftPackageReference "player-sdk-ios" */,
+			);
 			productRefGroup = 4DE11C912BBE82DD006F7DC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -586,6 +589,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DE11CBF2BBE95D0006F7DC6 /* XCRemoteSwiftPackageReference "player-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dailymotion/player-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4DE11C882BBE82DD006F7DC6 /* Project object */;
 }
