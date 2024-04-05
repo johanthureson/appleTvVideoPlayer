@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryRow: View {
+struct CategoryRowView: View {
     
     var videos: [Video]
 
@@ -26,7 +26,7 @@ struct CategoryRow: View {
                     ForEach(videos, id: \.id) { video in
                         NavigationLink(destination: VideoPlayerView(videos: videos)) {
                             VStack {
-                                RemoteImage(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
+                                RemoteImageView(url: "https://api.dailymotion.com/video/\(video.id)?fields=thumbnail_url")
                                     .frame(maxWidth: 460)
                                     .cornerRadius(10)
                                 Text(video.title)

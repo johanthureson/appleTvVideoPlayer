@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RemoteImage: View {
+struct RemoteImageView: View {
     let url: String
     @State private var data: Data = Data()
 

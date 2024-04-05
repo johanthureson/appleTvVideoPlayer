@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PlainNavigationLinkButtonStyle: ButtonStyle {
   func makeBody(configuration: Self.Configuration) -> some View {
-    PlainNavigationLinkButton(configuration: configuration)
+    PlainNavigationLinkButtonView(configuration: configuration)
   }
 }
 
-struct PlainNavigationLinkButton: View {
+struct PlainNavigationLinkButtonView: View {
   
   @Environment(\.isFocused) var focused: Bool
     @State private var isWobbling: Bool = false

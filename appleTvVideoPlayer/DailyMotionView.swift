@@ -13,10 +13,10 @@ struct DailyMotionView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
-                CategoryRow(videos: videos)
-                CategoryRow(videos: videos)
-                CategoryRow(videos: videos)
-                CategoryRow(videos: videos)
+                CategoryRowView(videos: videos)
+                CategoryRowView(videos: videos)
+                CategoryRowView(videos: videos)
+                CategoryRowView(videos: videos)
             }.onAppear(perform: fetchVideos)
         }
     }
