@@ -8,24 +8,27 @@
 import SwiftUI
 import AVKit
 
+
 struct VideoPlayerView: View {
-    
-    var videos: [Video]
-    @State var player: AVPlayer?
+    let video: Video
     
     var body: some View {
-        VStack {
-            VideoPlayer(player: player)
-                .onAppear {
-                    setPlayer()
-                }
+        if let highestResolutionLink = highestResolutionVideoLink(from: video.videoFiles) {
+            VideoPlayer(player: AVPlayer(url: URL(string: highestResolutionLink)!))
+                .edgesIgnoringSafeArea(.all)
+                .navigationTitle(videoTitle(from: video.url))
+        } else {
+            Text("No video available")
         }
-        .edgesIgnoringSafeArea(.all)
     }
     
-    private func setPlayer() {
-        player = AVPlayer(playerItem: AVPlayerItem(url: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!))
-        player?.play()
+    private func highestResolutionVideoLink(from videoFiles: [VideoFile]) -> String? {
+        videoFiles.sorted { $0.height > $1.height }.first?.link
     }
     
+    private func videoTitle(from url: String) -> String {
+        let components = url.split(separator: "/")
+        return components.dropLast().last.map(String.init) ?? "Unknown"
+    }
 }
+
