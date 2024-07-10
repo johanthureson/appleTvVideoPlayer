@@ -25,7 +25,7 @@ struct VideoGridView: View {
                                 } placeholder: {
                                     ProgressView()
                                 }
-                                Text(videoTitle(from: video.url))
+                                Text(VideoGridView.videoTitle(from: video.url))
                                     .font(.caption)
                                     .lineLimit(1)
                             }
@@ -43,7 +43,7 @@ struct VideoGridView: View {
         }
     }
     
-    private func videoTitle(from url: String) -> String {
+    static func videoTitle(from url: String) -> String {
         let components = url.split(separator: "/")
         return components.last.map(String.init) ?? "Unknown"
     }

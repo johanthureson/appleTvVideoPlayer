@@ -16,7 +16,7 @@ struct VideoPlayerView: View {
            let url = URL(string: highestResolutionLink) {
             VideoPlayer(player: AVPlayer(url: url))
                 .edgesIgnoringSafeArea(.all)
-                .navigationTitle(videoTitle(from: video.url))
+                .navigationTitle(VideoGridView.videoTitle(from: video.url))
         } else {
             Text("No video available")
         }
@@ -26,9 +26,5 @@ struct VideoPlayerView: View {
         videoFiles.sorted { $0.height > $1.height }.first?.link
     }
     
-    private func videoTitle(from url: String) -> String {
-        let components = url.split(separator: "/")
-        return components.last.map(String.init) ?? "Unknown"
-    }
 }
 
