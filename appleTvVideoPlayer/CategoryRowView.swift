@@ -58,7 +58,9 @@ class VideoViewModel {
     }
     
     func fetchVideos(urlString: String? = nil) {
-        let url = URL(string: urlString ?? "https://api.pexels.com/videos/popular?per_page=15")!
+        guard let url = URL(string: urlString ?? "https://api.pexels.com/videos/popular?per_page=15") else {
+            return
+        }
         var request = URLRequest(url: url)
         request.addValue(apiKey, forHTTPHeaderField: "Authorization")
         

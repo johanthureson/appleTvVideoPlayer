@@ -13,8 +13,9 @@ struct VideoPlayerView: View {
     let video: Video
     
     var body: some View {
-        if let highestResolutionLink = highestResolutionVideoLink(from: video.videoFiles) {
-            VideoPlayer(player: AVPlayer(url: URL(string: highestResolutionLink)!))
+        if let highestResolutionLink = highestResolutionVideoLink(from: video.videoFiles),
+           let url = URL(string: highestResolutionLink) {
+            VideoPlayer(player: AVPlayer(url: url))
                 .edgesIgnoringSafeArea(.all)
                 .navigationTitle(videoTitle(from: video.url))
         } else {
