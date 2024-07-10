@@ -29,7 +29,7 @@ struct VideoPlayerView: View {
     
     private func videoTitle(from url: String) -> String {
         let components = url.split(separator: "/")
-        return components.dropLast().last.map(String.init) ?? "Unknown"
+        return components.last.map(String.init) ?? "Unknown"
     }
 }
 
