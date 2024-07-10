@@ -1,46 +1,9 @@
 //
-//  CategoryRowView.swift
+//  VideoViewModel.swift
 //  appleTvVideoPlayer
 //
-//  Created by Johan Thureson on 2024-04-05.
+//  Created by Johan Thureson on 2024-07-10.
 //
-
-import Combine
-import SwiftUI
-import Foundation
-
-struct PexelsResponse: Codable {
-    let perPage: Int
-    let nextPage: String?
-    let videos: [Video]
-    
-    enum CodingKeys: String, CodingKey {
-        case perPage = "per_page"
-        case nextPage = "next_page"
-        case videos
-    }
-}
-
-struct Video: Codable, Identifiable {
-    let id: Int
-    let url: String
-    let image: String
-    let videoFiles: [VideoFile]
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case url
-        case image
-        case videoFiles = "video_files"
-    }
-}
-
-struct VideoFile: Codable {
-    let height: Int
-    let width: Int
-    let link: String
-    let quality: String
-}
 
 import Combine
 import SwiftUI

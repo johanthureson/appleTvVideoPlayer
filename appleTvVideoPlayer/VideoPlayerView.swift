@@ -8,7 +8,6 @@
 import SwiftUI
 import AVKit
 
-
 struct VideoPlayerView: View {
     let video: Video
     
