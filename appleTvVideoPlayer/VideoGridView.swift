@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VideoGridView: View {
-    @State private var viewModel = VideoViewModel()
+    var viewModel: VideoViewModel
     let width = CGFloat(310)
     
     var body: some View {

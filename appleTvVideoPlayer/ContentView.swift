@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var viewModel1 = VideoViewModel(subject: "nature")
+    @State private var viewModel2 = VideoViewModel(subject: "animals")
+    
     var body: some View {
         NavigationView {
             TabView {
-                VideoGridView()
+                VideoGridView(viewModel: viewModel1)
                     .tabItem {
-                        Image(systemName: "1.square.fill")
-                        Text("Tab 1")
+                        Text("Nature")
                     }
-                Text("Tab 2")
+                VideoGridView(viewModel: viewModel2)
                     .tabItem {
-                        Image(systemName: "2.square.fill")
-                        Text("Tab 2")
+                        Text("Animals")
                     }
             }
         }

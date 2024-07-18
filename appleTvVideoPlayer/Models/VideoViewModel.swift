@@ -10,18 +10,20 @@ import SwiftUI
 
 @Observable
 class VideoViewModel {
+    var subject: String
     var videos = [Video]()
     var nextPage: String?
     
     private var cancellables = Set<AnyCancellable>()
     private let apiKey = "c3NYVq4s2LerCHmnnBa6fU4pwN3z0naARMD2FEzhS1yLZVouhgREV1pa"
     
-    init() {
+    init(subject: String) {
+        self.subject = subject
         fetchVideos()
     }
     
     func fetchVideos(urlString: String? = nil) {
-        guard let url = URL(string: urlString ?? "https://api.pexels.com/videos/popular?per_page=15") else {
+        guard let url = URL(string: urlString ?? "https://api.pexels.com/videos/search?query=" + subject + "&per_page=1") else {
             return
         }
         var request = URLRequest(url: url)
