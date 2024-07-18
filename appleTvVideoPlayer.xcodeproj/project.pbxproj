@@ -13,6 +13,7 @@
 		4D5A65822C3E9A5100B5DDE3 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A65812C3E9A5100B5DDE3 /* Video.swift */; };
 		4D5A65842C3E9A5700B5DDE3 /* VideoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A65832C3E9A5700B5DDE3 /* VideoFile.swift */; };
 		4D9055A12BBFD822006CDA44 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9055A02BBFD822006CDA44 /* VideoPlayerView.swift */; };
+		4D9FBE312C48D5CD00084779 /* PlainNavigationLinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FBE302C48D5CD00084779 /* PlainNavigationLinkButtonView.swift */; };
 		4DE11C942BBE82DD006F7DC6 /* AppleTvVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11C932BBE82DD006F7DC6 /* AppleTvVideoPlayerApp.swift */; };
 		4DE11C962BBE82DD006F7DC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE11C952BBE82DD006F7DC6 /* ContentView.swift */; };
 		4DE11C982BBE82DF006F7DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		4D5A65812C3E9A5100B5DDE3 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4D5A65832C3E9A5700B5DDE3 /* VideoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFile.swift; sourceTree = "<group>"; };
 		4D9055A02BBFD822006CDA44 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		4D9FBE302C48D5CD00084779 /* PlainNavigationLinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainNavigationLinkButtonView.swift; sourceTree = "<group>"; };
 		4DE11C902BBE82DD006F7DC6 /* appleTvVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleTvVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE11C932BBE82DD006F7DC6 /* AppleTvVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTvVideoPlayerApp.swift; sourceTree = "<group>"; };
 		4DE11C952BBE82DD006F7DC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				4DE11C932BBE82DD006F7DC6 /* AppleTvVideoPlayerApp.swift */,
 				4DE11C952BBE82DD006F7DC6 /* ContentView.swift */,
 				4D5A657D2C3E9A2100B5DDE3 /* VideoGridView.swift */,
+				4D9FBE302C48D5CD00084779 /* PlainNavigationLinkButtonView.swift */,
 				4D9055A02BBFD822006CDA44 /* VideoPlayerView.swift */,
 				4DE11C972BBE82DF006F7DC6 /* Assets.xcassets */,
 				4DE11C992BBE82DF006F7DC6 /* Preview Content */,
@@ -288,6 +291,7 @@
 				4DE11C942BBE82DD006F7DC6 /* AppleTvVideoPlayerApp.swift in Sources */,
 				4D5A65802C3E9A4800B5DDE3 /* PexelsResponse.swift in Sources */,
 				4D5A657E2C3E9A2100B5DDE3 /* VideoGridView.swift in Sources */,
+				4D9FBE312C48D5CD00084779 /* PlainNavigationLinkButtonView.swift in Sources */,
 				4D5A65822C3E9A5100B5DDE3 /* Video.swift in Sources */,
 				4D5A657C2C3E923F00B5DDE3 /* VideoViewModel.swift in Sources */,
 				4D9055A12BBFD822006CDA44 /* VideoPlayerView.swift in Sources */,
