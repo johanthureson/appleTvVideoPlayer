@@ -32,9 +32,9 @@ struct VideoGridView: View {
                             }
                         }
                         .buttonStyle(PlainNavigationLinkButtonStyle())
-                        .onAppear {
+                        .task {
                             if video.url == viewModel.videos.last?.url {
-                                viewModel.fetchVideos(urlString: viewModel.nextPage)
+                                await viewModel.fetchVideos(urlString: viewModel.nextPage)
                             }
                         }
                     }
@@ -42,6 +42,9 @@ struct VideoGridView: View {
                 .padding()
             }
             .navigationTitle("Videos")
+        }
+        .task {
+            await viewModel.fetchVideos()
         }
     }
     

@@ -5,11 +5,11 @@
 //  Created by Johan Thureson on 2024-07-10.
 //
 
-import Combine
 import SwiftUI
 
 @Observable
 class VideoViewModel {
+    
     var subject: String
     var videos = [Video]()
     var nextPage: String?
@@ -19,24 +19,26 @@ class VideoViewModel {
     
     init(subject: String) {
         self.subject = subject
-        fetchVideos()
     }
     
-    func fetchVideos(urlString: String? = nil) {
+    func fetchVideos(urlString: String? = nil) async {
         guard let url = URL(string: urlString ?? "https://api.pexels.com/videos/search?query=" + subject + "&per_page=1") else {
             return
         }
         var request = URLRequest(url: url)
         request.addValue(apiKey, forHTTPHeaderField: "Authorization")
         
-        URLSession.shared.dataTaskPublisher(for: request)
-            .map { $0.data }
-            .decode(type: PexelsResponse.self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in }, receiveValue: { response in
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let response = try JSONDecoder().decode(PexelsResponse.self, from: data)
+            
+            DispatchQueue.main.async {
                 self.videos.append(contentsOf: response.videos)
                 self.nextPage = response.nextPage
-            })
-            .store(in: &cancellables)
+            }
+        } catch {
+            print("Error fetching videos: \(error)")
+        }
     }
+    
 }
