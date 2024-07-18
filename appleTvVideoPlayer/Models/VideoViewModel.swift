@@ -14,7 +14,6 @@ class VideoViewModel {
     var videos = [Video]()
     var nextPage: String?
     
-    private var cancellables = Set<AnyCancellable>()
     private let apiKey = "c3NYVq4s2LerCHmnnBa6fU4pwN3z0naARMD2FEzhS1yLZVouhgREV1pa"
     
     init(subject: String) {
