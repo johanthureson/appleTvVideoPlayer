@@ -10,15 +10,23 @@ import AVKit
 
 struct VideoPlayerView: View {
     let video: Video
+    @State var player: AVPlayer?
     
     var body: some View {
+        VStack {
+            VideoPlayer(player: player)
+                .onAppear {
+                    setPlayer()
+                }
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    private func setPlayer() {
         if let highestResolutionLink = highestResolutionVideoLink(from: video.videoFiles),
            let url = URL(string: highestResolutionLink) {
-            VideoPlayer(player: AVPlayer(url: url))
-                .edgesIgnoringSafeArea(.all)
-                .navigationTitle(VideoGridView.videoTitle(from: video.url))
-        } else {
-            Text("No video available")
+            player = AVPlayer(playerItem: AVPlayerItem(url: url))
+            player?.play()
         }
     }
     
@@ -27,4 +35,3 @@ struct VideoPlayerView: View {
     }
     
 }
-
