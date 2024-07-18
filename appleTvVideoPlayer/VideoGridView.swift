@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct VideoGridView: View {
+    
     var viewModel: VideoViewModel
     let width = CGFloat(310)
+    @State private var selectedVideo: Video? = nil
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: width))], spacing: 20) {
                     ForEach(viewModel.videos) { video in
-                        NavigationLink(destination: VideoPlayerView(video: video)) {
+                        Button(action: {
+                            selectedVideo = video
+                        }) {
                             VStack {
                                 AsyncImage(url: URL(string: video.image)) { image in
                                     image.resizable()
@@ -43,6 +47,9 @@ struct VideoGridView: View {
             }
             .navigationTitle("Videos")
         }
+        .fullScreenCover(item: $selectedVideo) { video in
+            VideoPlayerView(video: video)
+        }
         .task {
             await viewModel.fetchVideos()
         }
@@ -52,4 +59,5 @@ struct VideoGridView: View {
         let components = url.split(separator: "/")
         return components.last.map(String.init) ?? "Unknown"
     }
+
 }
