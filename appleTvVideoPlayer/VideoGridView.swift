@@ -18,29 +18,9 @@ struct VideoGridView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: width))], spacing: 20) {
                     ForEach(viewModel.videos) { video in
-                        Button(action: {
-                            selectedVideo = video
-                        }) {
-                            VStack {
-                                AsyncImage(url: URL(string: video.image)) { image in
-                                    image.resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: width, height: width / 16 * 9)
-                                        .cornerRadius(10)
-                                        .clipped()
-                                } placeholder: {
-                                    ProgressView()
-                                }
-                                Text(VideoGridView.videoTitle(from: video.url))
-                                    .font(.caption)
-                            }
-                        }
-                        .buttonStyle(PlainNavigationLinkButtonStyle())
-                        .task {
-                            if video.url == viewModel.videos.last?.url {
-                                await viewModel.fetchVideos(urlString: viewModel.nextPage)
-                            }
-                        }
+                        
+                        videoImageAndTitleButton(video: video)
+                        
                     }
                 }
                 .padding()
@@ -52,6 +32,32 @@ struct VideoGridView: View {
         }
         .task {
             await viewModel.fetchVideos()
+        }
+    }
+    
+    private func videoImageAndTitleButton(video: Video) -> some View {
+        Button(action: {
+            selectedVideo = video
+        }) {
+            VStack {
+                AsyncImage(url: URL(string: video.image)) { image in
+                    image.resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: width, height: width / 16 * 9)
+                        .cornerRadius(10)
+                        .clipped()
+                } placeholder: {
+                    ProgressView()
+                }
+                Text(VideoGridView.videoTitle(from: video.url))
+                    .font(.caption)
+            }
+        }
+        .buttonStyle(PlainNavigationLinkButtonStyle())
+        .task {
+            if video.url == viewModel.videos.last?.url {
+                await viewModel.fetchVideos(urlString: viewModel.nextPage)
+            }
         }
     }
     
